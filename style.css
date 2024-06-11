@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000;
+  background-image: url(qlok.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Added background for better readability */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.Welcometxt {
+  color: #ffffff;
+  font-size: 2em; /* Increased font size for better readability */
+}
+
+.sorry {
+  color: #ffffff;
+  font-size: 1.5em; /* Adjusted font size */
+}
+
+.button, .surprise {
+  padding: 10px 20px;
+  background-color: #006511;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+.button:focus, .surprise:focus {
+  outline: 2px solid #fff; /* Added focus outline for accessibility */
+}
+
+.textbox {
+  padding: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px; /* Set a max-width for responsiveness */
+  height: auto; /* Changed to auto to avoid fixed height */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.footer-button {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px; /* Adjusted margin for better spacing */
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.footer-button:hover {
+  background-color: #006511;
+}
+
+@media (max-width: 600px) {
+  .Welcometxt {
+    font-size: 1.5em;
+  }
+
+  .sorry {
+    font-size: 1.2em;
+  }
+
+  .button, .surprise {
+    font-size: medium;
+  }
+
+  .footer-button {
+    padding: 8px 16px;
+  }
+}
+
+/* Visually hidden class for accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
